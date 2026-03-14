@@ -1,16 +1,90 @@
-# React + Vite
+# React Advice App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that fetches and displays random advice using the Advice Slip API.
 
-Currently, two official plugins are available:
+This project demonstrates modern React data fetching using **React Suspense** and the **use() hook**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetches random advice from an API
+- Uses React Suspense for loading UI
+- Uses React `use()` hook to resolve promises
+- Button to fetch new advice instantly
+- Simple and clean component structure
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+---
+
+## How It Works
+
+1. The app fetches advice from the API.
+
+- https://api.adviceslip.com/advice
+
+2. The promise is stored in React state.
+
+3. The promise is passed to the `Advices` component.
+
+4. The `use()` hook resolves the promise.
+
+5. While the promise is pending, `Suspense` shows a loading message.
+
+---
+
+## Project Structure
+
+```
+src
+├── App.jsx
+├── Advices.jsx
+├── App.css
+└── assets
+```
+
+---
+
+## Main Components
+
+### App.jsx
+
+Responsible for:
+
+- Fetching advice
+- Managing state
+- Rendering Suspense
+
+### Advices.jsx
+
+Responsible for:
+
+- Resolving the promise with `use()`
+- Displaying the advice
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/AbuAbdullahUmarHabib/Get-Advice.git
+```
+
+Go to the project folder
+`cd react-advice-app`
+
+Install dependencies
+`npm install`
+
+Run the project
+`npm run dev`
