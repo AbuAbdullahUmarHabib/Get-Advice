@@ -14,14 +14,7 @@ function App() {
   return (
     <>
       <section id="center">
-        <img
-          src={expertImg}
-          className="base"
-          width="fit-content"
-          height="auto"
-          alt=""
-        />
-
+        <img src={expertImg} className="base" alt="" />
         <div>
           <h3>Get Experts Advice</h3>
         </div>
