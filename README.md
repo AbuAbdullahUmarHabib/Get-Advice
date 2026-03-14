@@ -81,7 +81,7 @@ git clone https://github.com/AbuAbdullahUmarHabib/Get-Advice.git
 ```
 
 Go to the project folder
-`cd react-advice-app`
+`cd Get-Advice`
 
 Install dependencies
 `npm install`
