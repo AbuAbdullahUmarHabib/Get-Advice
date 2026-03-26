@@ -77,7 +77,7 @@ Responsible for:
 Clone the repository
 
 ```bash
-git clone https://github.com/AbuAbdullahUmarHabib/Get-Advice.git
+git clone https://github.com/JowelislamHabib/Get-Advice.git
 ```
 
 Go to the project folder
